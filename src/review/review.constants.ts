@@ -1,0 +1,1 @@
+export const REVIEW_NOT_FOUND: string = 'Відгук з таким id не знайдено';
