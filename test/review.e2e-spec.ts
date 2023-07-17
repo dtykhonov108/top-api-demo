@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
-import { AppModule } from './../src/app.module';
+import { AppModule } from '../src/app.module';
 import { CreateReviewDto } from '../src/review/dto/dto';
 import { Types, disconnect } from 'mongoose';
 import { REVIEW_NOT_FOUND } from '../src/review/review.constants';
@@ -14,7 +14,6 @@ const loginDto: AuthDto = {
 	login: 'jopaa',
 	password: 'sosi'
 };
-
 
 const testDto: CreateReviewDto = {
 	name:'Dimas',
