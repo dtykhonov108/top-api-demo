@@ -2,18 +2,18 @@
 
   on:
     push:
-      branches: [master]
+      branches: [main]
 
   jobs:
     build:
       runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@master
-    - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@v5
-      with:
-        registry: docker.pkg.github.com/
-        name: docker.pkg.github.com/dtykhonov108/top-api-demo/top-api-demo
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        tags: "develop"
+      steps:
+        - uses: actions/checkout@master
+        - name: Publish to Registry
+          uses: elgohr/Publish-Docker-Github-Action@v5
+          with:
+            registry: docker.pkg.github.com/
+            name: docker.pkg.github.com/dtykhonov108/top-api-demo/top-api-demo
+            username: ${{ secrets.DOCKER_SECRET }}
+            password: ${{ secrets.xDmTx6318x }}
+            tags: "develop"
