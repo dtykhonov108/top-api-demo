@@ -15,5 +15,5 @@
             registry: docker.pkg.github.com
             name: docker.pkg.github.com/dtykhonov108/top-api-demo/top-api-demo
             username: ${{ secrets.DOCKER_USERNAME }}
-            password: ${{ secrets.DOCKER_SECRET }}
+            password: ${{ secrets.DOCKER_PASSWORD }}
             tags: "develop"
